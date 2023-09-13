@@ -1,30 +1,19 @@
-const grid = document.querySelector('.grid');
+function initalGrid () {
+        const grid = document.querySelector('.grid');
+        let squareArray = [];
+        let column = [];
 
-let squareArray = [];
-let column = [];
-
-/*
-for (let i = 0; i < 16; i++) {
-        for (;colCounter < 16; colCounter++) {
+        for(let colCounter = 0; colCounter < 16; colCounter++) {
                 column[colCounter] = document.createElement('div');
                 column[colCounter].setAttribute('class', `column col${colCounter}`)    
-                grid.appendChild(column[colCounter]);         
-        }
-        squareArray[i] = document.createElement('div');
-        squareArray[i].setAttribute('class', 'square');
-        column[colCounter].appendChild(squareArray[i]);
-        colCounter++;
-}
-*/
+                grid.appendChild(column[colCounter]); 
 
-for(let colCounter = 0; colCounter < 16; colCounter++) {
-        column[colCounter] = document.createElement('div');
-        column[colCounter].setAttribute('class', `column col${colCounter}`)    
-        grid.appendChild(column[colCounter]); 
-
-        for (let i = 0; i < 16; i++) {
-                squareArray[i] = document.createElement('div');
-                squareArray[i].setAttribute('class', 'square');
-                column[colCounter].appendChild(squareArray[i]);
+                for (let i = 0; i < 16; i++) {
+                        squareArray[i] = document.createElement('div');
+                        squareArray[i].setAttribute('class', 'square');
+                        column[colCounter].appendChild(squareArray[i]);
+                }
         }
 }
+
+initalGrid();
