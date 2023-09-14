@@ -63,6 +63,7 @@ body {
 
 .column {
     flex-basis: 6.25%;
+    flex-grow: 1;
     background-color: blue;
     display: flex;
     flex-direction: column;
