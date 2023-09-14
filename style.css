@@ -5,13 +5,21 @@ body,html {
 
 body {
     background-color: black;
-    color: black;
-    width: 100%;
+    color: white;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    align-self: center;
 }
 
 .main {
@@ -19,9 +27,12 @@ body {
     width: 1100px;
     height: 600px;
     flex-shrink: 1;
-    background-color: red;
+    background-color: #242424;
+    border: solid white 5px;
+    border-radius: 15px;
     justify-content: center;
     align-items: center;
+    gap: 15px;
 }
 
 .grid {
@@ -29,25 +40,24 @@ body {
     flex: 1 0 500px;
     max-width: 500px;
     max-height: 500px;
-    background-color: red;
-    border: solid white 2.5px;
+    border: solid white 5px;
     border-radius: 5px;
     gap: 0px;
 }
 
 .options {
-    background-color: blue;
     flex-grow: 1;
     flex-basis: 500px;
     max-width: 500px;
     height: 500px;
+    display: flex;
+    flex-direction: column;
 }
 
 .square {
     background-color: black;
     flex-grow: 1;
     flex-shrink: 0;
-    border: solid white 0.1px;
 }
 
 .column {
