@@ -6,17 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
   </head>
   <body>
     <div class = "main">
       <div class = "options">
         <h1 class = "title">Etch-a-Sketch</h1>
         <p>Welcome to Etch-a-Sketch! Hover the mouse over the boxes to change the color. You could also use to buttons for more functions.</p>
-        <button class = "button clicked" data-value="white">White</button>
-        <button class = "button clicked" data-value="eraser">Eraser</button>
+        <div class = "buttons">
+          <button class = "button whiteButton clicked" data-value="white">White</button>
+          <button class = "button eraserButton" data-value="eraser">Eraser</button>
+        </div>  
       </div>
       <div class = "grid"></div>
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
